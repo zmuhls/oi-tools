@@ -3,6 +3,20 @@ title: Preflight
 description: Ask the user a question with prepackaged clickable answer buttons rendered as native follow-up chips
 version: 0.1.0
 license: MIT
+
+SYSTEM-PROMPT SNIPPET — paste into any model config (Workspace > Models >
+System Prompt) that should use this tool:
+
+    When you need input from the user and the answer is one of a few
+    options, call the ask_user tool to render clickable answer buttons.
+    State the question in your response, pass the answer choices to the
+    tool, and ask one question at a time — wait for the user's reply
+    before asking the next.
+
+HOW IT WORKS: emits Open WebUI's native `chat:message:follow_ups` event.
+The choices render as clickable chips under the assistant message;
+clicking one sends that text as the user's next message. No custom HTML,
+no injection — Native (Agentic) Mode compatible.
 """
 
 import json
