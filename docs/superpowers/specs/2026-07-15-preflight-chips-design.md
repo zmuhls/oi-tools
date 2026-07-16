@@ -1,4 +1,4 @@
-# ask_user — Interactive Question Chips for Open WebUI
+# Preflight — Interactive Question Chips for Open WebUI
 
 **Date:** 2026-07-15
 **Status:** Approved
