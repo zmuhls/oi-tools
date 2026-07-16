@@ -8,6 +8,8 @@ A collection of Open WebUI Workspace tools (github.com/zmuhls/oi-tools). Each to
 
 Currently one tool: `preflight/` — asks the user a question with clickable answer chips.
 
+Pushing requires the `zmuhls` GitHub account: `gh auth switch -u zmuhls`, push, then `gh auth switch -u milwrite` to restore the usual active account.
+
 ## Commands
 
 Run a tool's tests from inside its directory (the tool module must be importable from cwd):
